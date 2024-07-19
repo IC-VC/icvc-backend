@@ -84,7 +84,7 @@ NnsProposal:
          * ICVC tokens for swap: 20 000 000 ICVC
          * ICP to raise min: 1 000 000 ICP
          * ICP to raise max: 2 000 000 ICP (Without NF)
-         * Min number of tokens per contributor: 1000 ICP
+         * Min number of tokens per contributor: 1 000 ICP
          * Max number of tokens per contributor: 1 000 000 ICP
          * Min number of participants: 10
 
@@ -187,7 +187,7 @@ Voting:
   #
   # Users cannot access the SNS tokens used to stake neurons (until the neuron
   # is dissolved). This field is specified as a duration. For example: "6 months".
-  minimum_dissolve_delay: 6 month
+  minimum_dissolve_delay: 6 months
 
   # Configuration of voting power bonuses that are applied to neurons to
   # incentivize alignment with the best interest of the DAO. Note, these
