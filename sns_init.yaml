@@ -81,7 +81,6 @@ NnsProposal:
     The SNS will be initialized with the following parameters:
 
          * ICVC total supply: 20 000 000 ICVC
-         * ICVC tokens for swap: 20 000 000 ICVC
          * ICP to raise min: 1 000 000 ICP
          * ICP to raise max: 2 000 000 ICP (Without NF)
          * Min number of tokens per contributor: 1 000 ICP
@@ -218,7 +217,7 @@ Voting:
       # This parameter sets the maximum dissolve delay a neuron can have.
       # When reached, the maximum dissolve delay bonus will be applied.
       # This field is specified as a duration. For example: "8 years".
-      duration: 2 years
+      duration: 24 months
       # If a neuron's dissolve delay is `duration`, its voting power will
       # be increased by the dissolve delay `bonus` amount.
       # This field is specified as a percentage. For instance,
@@ -251,7 +250,7 @@ Voting:
       # the maximum age bonus. Once this age is reached, the neuron will
       # continue to age, but no more bonus will be applied. This field
       # is specified as a duration. For example: "2 years".
-      duration: 1 years 
+      duration: 12 months 
       # If a neuron's age is `duration` or older, its voting power will be
       # increased by this age`bonus` amount.
       # This field is specified as a percentage. For instance,
@@ -294,7 +293,7 @@ Voting:
     # Values of 0 result in the reward rate always being `final`.
     #
     # This field is specified as a duration. For example: "8 years".
-    transition_duration: 0 years
+    transition_duration: 0 months
 
 # Configuration of the initial token distribution of the SNS. You can configure
 # how SNS tokens are distributed in each of the three groups:
@@ -319,7 +318,12 @@ Distribution:
   # right after the SNS creation and thus includes the pre-initialization mode
   # period.
   #
-  Neurons: []
+  Neurons:
+    - principal: mmutr-omtpf-yi6px-qu772-maqrn-hcr7h-lnwky-yrrqp-danlh-mi26q-bae
+      stake: 100 tokens
+      dissolve_delay: 6 months
+      vesting_period: 24 months
+      memo: 0
     # For the actual SNS launch, you should replace this with one or more
     # principals of your intended genesis neurons.
     #
@@ -335,7 +339,7 @@ Distribution:
     # The initial SNS token balance of the Swap canister is what will be
     # available for the decentralization swap. These tokens will be swapped
     # for ICP. This field is specified as a token. For instance, "1 token".
-    swap: 20_000_000 tokens
+    swap: 19_999_900 tokens
 
   # Checksum of the total number of tokens distributed in this section.
   # This field is specified as a token. For instance, "1 token".
@@ -386,7 +390,7 @@ Swap:
   #
   # This field is optional. If set, must be within 1 to 1,000 characters and
   # at most 8,000 bytes.
-   confirmation_text: >
+  confirmation_text: >
     (In progress. A final confimation text will be included prior to SNS proposal.)
 
   # A list of countries from which swap participation should not be allowed.
