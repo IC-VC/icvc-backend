@@ -294,7 +294,7 @@ Voting:
     # Values of 0 result in the reward rate always being `final`.
     #
     # This field is specified as a duration. For example: "8 years".
-    transition_duration: 0
+    transition_duration: 0 years
 
 # Configuration of the initial token distribution of the SNS. You can configure
 # how SNS tokens are distributed in each of the three groups:
