@@ -51,7 +51,7 @@ name: ICVC
 # Description of the SNS project.
 # Must be a string of max length = 2,000.
 description: >
-  ICVC is a venture capital DAO backing founders building the new internet.  
+  ICVC DAO is a community governed Web3 venture builder. 
 
 # This is currently a placeholder field and must be left empty for now.
 Principals: []
@@ -77,7 +77,7 @@ NnsProposal:
 
   # The description of the proposal. Must be a string of 10 to 2,000 bytes.
   summary: >
-    Proposal to create an SNS for ICVC.
+    Proposal to create an SNS for ICVC DAO.
     The SNS will be initialized with the following parameters:
 
          * ICVC total supply: 20 000 000 ICVC
@@ -391,7 +391,13 @@ Swap:
   # This field is optional. If set, must be within 1 to 1,000 characters and
   # at most 8,000 bytes.
   confirmation_text: >
-    (In progress. A final confimation text will be included prior to SNS proposal.)
+    $ICVC is a cryptographic digital token designed to facilitate participation and membership within the ICVC DAO LLC (the “DAO”).
+    The DAO is a community-governed Web3 venture builder that focuses on fostering and investing in early-stage Web3 projects within the Internet Computer ecosystem.
+    The mission and vision of the DAO, along with other essential characteristics and pertinent information, are comprehensively detailed in the whitepaper accessible at: https://ic-vc.com/docs/whitepaper.pdf
+
+    The possession and use of $ICVC tokens are governed by the terms and conditions of use included in the whitepaper (the “T&Cs”).
+    Each token holder hereby represents and warrants that they have read, understood, and agreed to abide by the T&Cs.
+    Any individual who has not read or does not agree to these T&Cs is prohibited from purchasing or holding $ICVC tokens.
 
   # A list of countries from which swap participation should not be allowed.
   #
